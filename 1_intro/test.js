@@ -1,1 +1,0 @@
-console.log("troquei a configuracao de inicializacao do webpack");
