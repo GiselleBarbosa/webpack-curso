@@ -13,10 +13,12 @@ module.exports = {
 				test: /\.css$/,
 				use: ["style-loader", "css-loader"],
 			},
+			
 			{
 				test: /\.(png|jpg|jpeg)$/,
 				use: ["file-loader"],
 			},
+
 			{
 				test: /\.scss$/,
 				use: ["style-loader", "css-loader", "sass-loader"],
@@ -32,6 +34,11 @@ module.exports = {
 						plugins: ["@babel/plugin-proposal-object-rest-spread"],
 					},
 				},
+			},
+
+			{
+				test: /\.html$/,
+				use: "html-loader",
 			},
 		],
 	},

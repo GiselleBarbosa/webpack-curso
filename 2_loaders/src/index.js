@@ -1,6 +1,9 @@
+import "./styles/warning.css";
+
 import Button from "./components/button.js";
 import Image from "./components/image.js";
 import Title from "./components/title.js";
+import warning from "./templates/warning.html";
 
 const title = new Title();
 title.create("Primeira página");
@@ -19,3 +22,7 @@ let { a, b, ...teste } = obj;
 console.log(a);
 console.log(b);
 console.log(teste);
+
+// Importacao de HTML
+const body = document.querySelector("body");
+body.innerHTML += warning;

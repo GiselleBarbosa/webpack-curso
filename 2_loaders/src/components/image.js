@@ -1,14 +1,19 @@
-import finalFantasyX from "../img/images.jpg";
+import tidus from "../img/tidus.jpg";
+import yuna from "../img/yuna.png";
 
 class Image {
 	insertImage() {
-		const img = document.createElement("img");
+		const imgTidus = document.createElement("img");
+		const imgYuna = document.createElement("img");
 
-		img.src = finalFantasyX;
+		imgYuna.src = yuna;
+		imgTidus.src = tidus;
 
-		img.width = 200;
+		imgTidus.width = 250;
+		imgYuna.width = 200;
 
-		document.querySelector("body").appendChild(img);
+		document.querySelector("body").appendChild(imgTidus);
+		document.querySelector("body").appendChild(imgYuna);
 	}
 }
 
