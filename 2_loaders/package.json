@@ -11,12 +11,13 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"webpack": "^5.90.1",
-		"webpack-cli": "^5.1.4"
+		"webpack": "^5.90.1"
 	},
 	"devDependencies": {
 		"css-loader": "^6.10.0",
 		"file-loader": "^6.2.0",
-		"style-loader": "^3.3.4"
+		"sass-loader": "^14.1.0",
+		"style-loader": "^3.3.4",
+		"webpack-cli": "^5.1.4"
 	}
 }
