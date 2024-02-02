@@ -1,8 +1,8 @@
 
 .main-title {
-  background-color: red;
-  color: #000;
+  background-color: #006eff;
+  color: #fff;
   text-align: center;
-  border: 2px blue solid;
+  border: 1px #1b1b22 solid;
   padding: 20px;
 }
