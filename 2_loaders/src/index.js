@@ -3,6 +3,7 @@ import "./styles/warning.css";
 import Button from "./components/button.js";
 import Image from "./components/image.js";
 import Title from "./components/title.js";
+import frasesTxt from "./files/frases.txt";
 import warning from "./templates/warning.html";
 
 const title = new Title();
@@ -26,3 +27,8 @@ console.log(teste);
 // Importacao de HTML
 const body = document.querySelector("body");
 body.innerHTML += warning;
+
+// Importação do arquivo texto
+const frase = frasesTxt;
+
+console.log(frase);

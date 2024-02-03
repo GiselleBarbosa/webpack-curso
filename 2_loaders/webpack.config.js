@@ -13,7 +13,7 @@ module.exports = {
 				test: /\.css$/,
 				use: ["style-loader", "css-loader"],
 			},
-			
+
 			{
 				test: /\.(png|jpg|jpeg)$/,
 				use: ["file-loader"],
@@ -39,6 +39,11 @@ module.exports = {
 			{
 				test: /\.html$/,
 				use: "html-loader",
+			},
+
+			{
+				test: /\.txt$/,
+				use: "raw-loader",
 			},
 		],
 	},

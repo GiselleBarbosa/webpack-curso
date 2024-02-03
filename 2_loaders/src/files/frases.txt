@@ -1,0 +1,1 @@
+Mais um text com o webpack. Desta vez testando o raw-loader para carregar arquivos de texto. :)
