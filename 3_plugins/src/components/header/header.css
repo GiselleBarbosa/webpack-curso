@@ -1,8 +1,8 @@
 .title {
-  background-color: #1100ff;
+  background-color: #180dad;
   color: #fff;
   text-align: center;
   padding: 20px;
   border: 1px solid black;
-
+  border-radius: 8px;
 }
