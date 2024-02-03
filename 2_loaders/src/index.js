@@ -31,4 +31,4 @@ body.innerHTML += warning;
 // Importação do arquivo texto
 const frase = frasesTxt;
 
-console.log(frase);
+console.log(frase.toUpperCase());
