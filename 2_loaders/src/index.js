@@ -3,6 +3,7 @@ import "./styles/warning.css";
 import Button from "./components/button.js";
 import Image from "./components/image.js";
 import Title from "./components/title.js";
+import descricaoJSON from "./files/descricao.json";
 import frasesTxt from "./files/frases.txt";
 import warning from "./templates/warning.html";
 
@@ -32,3 +33,8 @@ body.innerHTML += warning;
 const frase = frasesTxt;
 
 console.log(frase.toUpperCase());
+
+// Importação do arquivo JSON
+const descricao = descricaoJSON;
+
+console.log(descricao);

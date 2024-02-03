@@ -1,0 +1,22 @@
+{
+	"paises": [
+		{
+			"nome": "Brasil"
+		},
+		{
+			"nome": "Argentina"
+		},
+		{
+			"nome": "Estados Unidos"
+		},
+		{
+			"nome": "Japão"
+		},
+		{
+			"nome": "Espanha"
+		},
+		{
+			"nome": "Nigeria"
+		}
+	]
+}
