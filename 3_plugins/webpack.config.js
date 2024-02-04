@@ -8,7 +8,7 @@ const htmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
 	entry: "./src/index.js",
 	output: {
-		filename: "bundle.js",
+		filename: "[name][contenthash].js",
 		path: path.resolve(__dirname, "dist"),
 	},
 	mode: "development",
@@ -27,7 +27,7 @@ module.exports = {
 
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: "style.css",
+			filename: "[name][contenthash].css",
 		}),
 
 		new webpack.DefinePlugin({
