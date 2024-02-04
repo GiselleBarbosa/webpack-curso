@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const webpack = require("webpack");
 const dotEnvPlugin = require("dotenv-webpack");
+const htmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
 	entry: "./src/index.js",
@@ -35,5 +36,7 @@ module.exports = {
 		}),
 
 		new dotEnvPlugin(),
+
+		new htmlWebpackPlugin(),
 	],
 };
