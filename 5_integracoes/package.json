@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1", 
+		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "webpack"
 	},
 	"keywords": [],
@@ -19,9 +19,9 @@
 		"file-loader": "^6.2.0",
 		"html-webpack-plugin": "^4.5.0",
 		"jquery": "^3.5.1",
-		"node-sass": "^5.0.0",
 		"popper.js": "^1.16.1",
-		"sass-loader": "^10.1.0",
+		"sass": "^1.20.1",
+		"sass-loader": "^10.0.1",
 		"style-loader": "^2.0.0",
 		"url-loader": "^4.1.1",
 		"webpack": "^5.11.1",
