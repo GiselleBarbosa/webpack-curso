@@ -4,7 +4,7 @@ module.exports = {
 	entry: "./src/index.js",
 	output: {
 		filename: "bundle.js",
-		path: path.resolve(__dirname, "dist"),
+		path: path.resolve(__dirname, "./dist"),
 	},
 	module: {
 		rules: [
@@ -14,9 +14,9 @@ module.exports = {
 				use: ["style-loader", "css-loader"],
 			},
 			{
-				test: /\.(ttf | woff | woff2)$/,
+				test: /\.(ttf|woff|woff2)$/,
 				exclude: /node_modules/,
-				use: ["url-loader"],
+				loader: "url-loader",
 			},
 		],
 	},
