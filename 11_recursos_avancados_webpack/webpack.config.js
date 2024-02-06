@@ -1,11 +1,12 @@
 const path = require("path");
 const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
 	entry: "./src/index.js",
 	output: {
 		path: path.resolve(__dirname, "./dist"),
-		filename: "bundle.js",
+		filename: "[name].js",
 	},
 
 	devServer: {
@@ -23,9 +24,18 @@ module.exports = {
 	},
 
 	mode: "production",
+	
 	plugins: [
 		new webpack.ProvidePlugin({
 			_: "lodash",
 		}),
+
+		new HtmlWebpackPlugin({
+			title: "Recurso Webpack",
+		}),
 	],
+
+	optimization: {
+		runtimeChunk: true,
+	},
 };
