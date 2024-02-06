@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
 	entry: "./src/index.js",
@@ -7,4 +8,9 @@ module.exports = {
 		filename: "bundle.js",
 	},
 	mode: "production",
+	plugins: [
+		new webpack.ProvidePlugin({
+			_: "lodash",
+		}),
+	],
 };
