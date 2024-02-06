@@ -11,6 +11,7 @@ module.exports = {
 
 	devServer: {
 		historyApiFallback: true,
+		hot: true,
 	},
 
 	module: {
@@ -24,7 +25,7 @@ module.exports = {
 	},
 
 	mode: "production",
-	
+
 	plugins: [
 		new webpack.ProvidePlugin({
 			_: "lodash",
