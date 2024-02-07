@@ -7,20 +7,20 @@ module.exports = {
 	output: {
 		filename: "[name].js",
 		path: path.resolve(__dirname, "./dist"),
-		publicPath: "http://localhost:9001/",
+		publicPath: "http://localhost:9002/",
 	},
 
 	devServer: {
 		contentBase: path.resolve(__dirname, "./dist"),
 		index: "index.html",
-		port: 9001,
+		port: 9002,
 		historyApiFallback: true,
 	},
 
 	mode: "development",
 
 	resolve: {
-		extensions: [".js", ".jsx", ".json"],
+		extensions: [".jsx", ".js", ".json"],
 	},
 
 	module: {
@@ -44,6 +44,13 @@ module.exports = {
 			filename: "index.html",
 			template: "./public/index.html",
 			title: "App",
+		}),
+		new ModuleFederationPlugin({
+			name: "HomeApp",
+			filename: "remoteEntry.js",
+			exposes: {
+				"./HomePage": "./src/Home",
+			},
 		}),
 	],
 };
