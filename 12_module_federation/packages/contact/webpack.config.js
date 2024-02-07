@@ -45,5 +45,14 @@ module.exports = {
 			template: "./public/index.html",
 			title: "App",
 		}),
+
+		// exposicao do MFE de CONTACT
+		new ModuleFederationPlugin({
+			name: "ContactApp",
+			filename: "remoteEntry.js",
+			exposes: {
+				"./ContactPage": "./src/Contact",
+			},
+		}),
 	],
 };

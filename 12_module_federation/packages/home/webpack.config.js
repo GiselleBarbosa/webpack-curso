@@ -45,6 +45,8 @@ module.exports = {
 			template: "./public/index.html",
 			title: "App",
 		}),
+
+		// exposicao do MFE de HOME
 		new ModuleFederationPlugin({
 			name: "HomeApp",
 			filename: "remoteEntry.js",
